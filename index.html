@@ -1,5 +1,8 @@
 		<html>
 		<head>
+			<meta charset="utf-8">
+		    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		    <meta name="viewport" content="width=device-width, initial-scale=1">
 			<style type="text/css">
 
 				.photo {
@@ -17,10 +20,9 @@
 
 				body {
 					font-family: Arial, Helvetica, sans-serif;
-					width: 750px;
+					max-width: 750px;
 					display: block;
 					margin: auto;
-					padding: 20px;
 				}
 
 				h1, h2 {
@@ -34,9 +36,10 @@
 			</style>
 			<link rel="stylesheet" href="css/metrodna.css">
 			<link rel="stylesheet" href="css/blueimp-gallery.css">
+			<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		</head>
 		<body>
-
+<div class="container">
 			<h1>420 000 &euro;</h1>
 			<h2>3 pi&egrave;ces - 60 m&sup2; - Paris 19<sup>&egrave;me</sup></h2>
 
@@ -71,9 +74,8 @@
 			</p>
 
 			<h3>Transports:</h3>
-			<table style="width: 800px">
-				<tr>
-					<td>
+			<div class="row">
+				<div class="col-md-6">
 						<p>
 							<span class="metro symbole">Metro</span>
 							<span class="metro ligne5">Ligne 5</span>
@@ -84,8 +86,8 @@
 							<span class="metro ligne7b">Ligne 5</span>
 							<span class="station">Danube</span> (500m)
 						</p>
-					</td>
-					<td>
+				</div>
+				<div class="col-md-6">
 						<p>
 							<span class="tram symbole">Tram</span>
 							<span class="tram ligne3b">Ligne 3b</span>
@@ -96,9 +98,8 @@
 							<span class="bus ligne75">Ligne 75</span>
 							<span class="station">G&eacute;n&eacute;ral Cochet</span> (200m)
 						</p>
-					</td>
-				</tr>
-			</table>
+				</div>
+			</div>
 
 			<h3>Photos:</h3>
 			<!-- The Gallery as lightbox dialog, should be a child element of the document body -->
@@ -139,22 +140,24 @@
 			</div>
 
 			<h3>Diagnostics:</h3>
-			<table class="diagnostics">
-				<td>
-					<h5>DPE:</h5>
+			<div class="row">
+				<div class="col-md-6">
+					<h4>DPE:</h4>
 					<div id="dpe"></div>
-				</td>
-				<td>
-					<h5>GES:</h5>
+				</div>
+				<div class="col-md-6">
+					<h4>GES:</h4>
 					<div id="ges"></div>
-				</td>
-			</tr>
-		</table>
+				</div>
+			</div>
 
+</div>
 
-
-
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <!-- Latest compiled and minified JavaScript -->
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<script src="js/jquery.blueimp-gallery.min.js"></script>
 		<script src="js/blueimp-gallery.min.js"></script>
 		<script>
